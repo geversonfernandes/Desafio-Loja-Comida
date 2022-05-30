@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+@font-face {
+    font-family: metropolis-light;
+    src: url(fonts/Metropolis-Light.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #272521;
+    opacity: 0.7;
+    width: 100%;
+}
+
+.menu{
+    padding-left: 15%;
+}
+
+.menu > ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu > ul > li{
+    font-family: metropolis-light;
+    padding: 1.8rem 1rem;
+    font-size: 0.9rem;
+}
+
+.login{
+    padding-right: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+
+.login > div{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+svg{
+    width: 26px;
+    height: 26px;
+    fill: #fff;
+}
+
+/* =====-----PRIMEIRA SEÇÃO -----===== */
+
+.parallax{
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#first-section{
+    background-image: linear-gradient(rgba(39, 37, 33, 0.4), rgba(39, 37, 33, 0.4)), url(images/img-principal.webp);
+    height: 700px;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5% 0 0 0;
+}
+
+.container-first-section > p:nth-child(1){
+    font-family: metropolis-light;
+    line-height: 3rem;
+    letter-spacing: 0.3rem;
+}
+
+.container-first-section > p:nth-child(2),
+.container-first-section > div > span{
+    font-family: 'Playfair Display', serif;
+    font-size: 7rem;
+}
+
+span > sup{
+    font-size: 2rem;
+}
+
+#first-section > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-first-section{
+    line-height: 6rem;
+    padding-top: 4rem;
+}
+
+#first-section > p{
+    font-family: metropolis-light;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #ADA9A0;
+    color: #ADA9A0;
+}
+
+/* =====-----SEGUNDA SEÇÃO -----===== */
+#about-us{
+    display: flex;
+    justify-content: center;
+}
+
+.container-sections{
+    display: flex;
+    justify-content: center;
+    width: 52%;
+    padding: 5% 0;
+}
+
+.container-sections > img,
+.container-sections > div{
+    width: 50%;
+}
+
+.paragraphs-sections{
+    font-family: metropolis-light;
+    color: #756F63;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+    font-size: 0.8rem;
+    line-height: 3rem;
+}
+
+.paragraphs-sections > div > h3{
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+.paragraphs-sections > div > h4{
+    letter-spacing: 0.1rem;
+    font-weight: normal;
+}
+
+.paragraphs-sections > p{
+    line-height: 1.5rem;
+}
+
+
+.paragraphs-sections > div > div{
+    width: 20%;
+    border-top: 1px solid #756F63;
+    margin: 10px auto;
+    align-items: center;
+}
+
+/* =====----- SEÇÃO DO VIDEO =====----- */
+/* #video-section > video{
+
+} */
+
+/* =====----- SEÇÃO DE SERVIÇOS =====----- */
+#services-section{
+    display: flex;
+    justify-content: center;
+}
+
+.container-section-service{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding: 5% 0;
+}
+
+.paragraphs-services{
+    width: 50%;
+}
+
+.recipe-images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 1rem;
+}
+
+/* =====----- CITAÇÃO -----===== */
+blockquote{
+    background-image: url(images/choco-pieces.webp);
+    height: 600px;
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+blockquote > cite{
+    display: block;
+    text-align: center;
+    font-family: metropolis-light;
+    color: #fff;
+    font-style: normal;
+    padding-top: 1%;
+}
+
+blockquote > h4{
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+/* =====----- SEÇÃO PRODUTO -----===== */
+#about-product{
+    display: flex;
+    justify-content: center;
+}
+
+/* =====----- SEÇÃO CONTATO -----===== */
+#contact-us{
+    background-color: #e2e1de;
+    display: flex;
+    justify-content: center;
+}
+
+.paragraphs-contact{
+    gap: 3rem;
+    width: 30%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-datas-message{
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.form-datas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.form-message{
+    display: block;
+    width: 50%;
+}
+
+.form-datas > input{
+    padding: 0.6rem;
+    background-color: #e2e1de;
+}
+
+.form-message > textarea{
+    width: 100%;
+    height: 100%;
+    background-color: #e2e1de;
+}
+
+form > button{
+    width: 20%;
+    text-align: center;
+}
+
+/* =====----- RODAPÉ -----===== */
+footer{
+    font-family: metropolis-light;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: #756f63;
+    padding: 1% 0;
+    color: #fff;
+}
